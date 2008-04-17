@@ -3,7 +3,7 @@ package Purple;
 use warnings;
 use strict;
 
-our $VERSION = '0.9';
+our $VERSION = '1.0';
 
 my $DEFAULT_TYPE = 'SQLite';
 

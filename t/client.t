@@ -65,5 +65,5 @@ sub get_server {
 }
 
 END {
-    kill 15, $pid;
+    kill 15, $pid if defined $pid;
 }

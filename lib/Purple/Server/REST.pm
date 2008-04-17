@@ -28,6 +28,7 @@ sub handle_request {
     my $status;
     if ( $self->can($method) ) {
         eval {
+            # XXX trap empty output when no match
             $output = $self->$method($cgi);
             $status = '200';
         };

@@ -9,7 +9,7 @@ my @implementations = qw(
     SQLite
 );
 
-plan tests => (@implementations * 85);
+plan tests => scalar @implementations * 85;
 
 ### vars
 my $DB_LOC = 't';

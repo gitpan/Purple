@@ -17,8 +17,9 @@ sub new {
         eval "require $real_class";
         die "Unable to load $real_class: $@" if $@;
     }
+    delete $p{type};
 
-    return $real_class->_New(store => $p{store});
+    return $real_class->_New(%p);
 }
 
 =head1 NAME

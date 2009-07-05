@@ -9,7 +9,7 @@ my @implementations = qw(
     SQLite
 );
 
-plan tests => scalar @implementations * 85;
+plan tests => (scalar @implementations * 85) + 1;
 
 ### vars
 my $DB_LOC = 't';
@@ -23,7 +23,7 @@ my $url1 = 'http://i.love.purple.net/EugeneKim';
 my $url2 = 'http://i.love.purple.net/ChrisDent';
 
 ### load module (1)
-BEGIN { use_ok('Purple') }
+use_ok('Purple');
 
 foreach my $type (@implementations)
 {

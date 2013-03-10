@@ -13,7 +13,6 @@ WriteMakefile(
         'HTTP::Server::Simple' => 0.18,
         'DBD::SQLite' => 0,
         'DB_File' => 0,
-        'LWP::UserAgent' => 0,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Purple-*' },

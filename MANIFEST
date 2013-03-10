@@ -17,3 +17,4 @@ t/client.t
 t/pod-coverage.t
 t/pod.t
 TODO
+META.json                                Module JSON meta-data (added by MakeMaker)
